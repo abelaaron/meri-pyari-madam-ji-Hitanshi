@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Hitanshi 💕</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Floating hearts animation -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="sparkle sparkle-1"></div>
+    <div class="sparkle sparkle-2"></div>
+    <div class="sparkle sparkle-3"></div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">Hitanshi, You Make Every Day Brighter</h1>
+      <p class="hero-subtitle">This website is a small token of how amazing I think you are</p>
+      <button class="cta-button" onclick="scrollToReasons()">Discover Why</button>
+    </div>
+  </section>
+
+  <!-- Added special photo section for crush's photo -->
+  <!-- Photo Section -->
+  <section class="photo-section">
+    <div class="photo-container">
+      <h2 class="section-title">The One Who Makes My Heart Skip a Beat</h2>
+      <div class="photo-frame">
+        <!-- INSTRUCTIONS: Replace "her-photo.jpg" with your crush's actual photo filename -->
+        <!-- Just place the photo in the same folder as this HTML file -->
+        <img src="her8.jpg" alt="The most amazing person" class="crush-photo">
+        <div class="photo-caption">Simply breathtaking ✨</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Added photo gallery section for multiple images -->
+  <!-- Photo Gallery Section -->
+  <section class="photo-gallery-section">
+    <div class="gallery-container">
+      <h2 class="section-title">My Favorite Moments of You</h2>
+      <p class="gallery-subtitle">Every picture tells a story of why you're so special</p>
+      
+      <div class="gallery-grid">
+        <!-- Photo 1 -->
+        <div class="gallery-item">
+          <div class="gallery-frame">
+            <!-- INSTRUCTIONS: Replace "hitanshi-1.jpg" with your actual photo filename -->
+            <!-- Just place the photos in the same folder as this HTML file -->
+            <img src="her1.jpg" alt="Beautiful moment with Hitanshi" class="gallery-photo">
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item">
+          <div class="gallery-frame">
+            <img src="her2.jpg" alt="Another beautiful moment with Hitanshi" class="gallery-photo">
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item">
+          <div class="gallery-frame">
+            <img src="her3.jpg" alt="Special memory with Hitanshi" class="gallery-photo">
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item">
+          <div class="gallery-frame">
+            <img src="her4.jpg" alt="Amazing moment with Hitanshi" class="gallery-photo">
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="gallery-item">
+          <div class="gallery-frame">
+            <img src="her5.jpg" alt="Perfect moment with Hitanshi" class="gallery-photo">
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="gallery-item">
+          <div class="gallery-frame">
+            <img src="her6.jpg" alt="Unforgettable moment with Hitanshi" class="gallery-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reasons Section -->
+  <section class="reasons-section" id="reasons">
+    <h2 class="section-title">Reasons Why Hitanshi is Amazing</h2>
+    
+    <div class="reasons-grid">
+      <div class="reason-card">
+        <div class="reason-icon">✨</div>
+        <h3 class="reason-title">Your Smile</h3>
+        <p class="reason-text">Your smile lights up every room and makes the world feel like a better place.</p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">💫</div>
+        <h3 class="reason-title">Your Kindness</h3>
+        <p class="reason-text">The way you treat others with compassion and understanding is truly inspiring.</p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">🌟</div>
+        <h3 class="reason-title">Your Laughter</h3>
+        <p class="reason-text">Your laughter is contagious and brings joy to everyone around you.</p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">💝</div>
+        <h3 class="reason-title">Your Spirit</h3>
+        <p class="reason-text">Your positive energy and enthusiasm for life is absolutely magnetic.</p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">🎨</div>
+        <h3 class="reason-title">Your Creativity</h3>
+        <p class="reason-text">The way you see the world and express yourself is beautifully unique.</p>
+      </div>
+
+      <div class="reason-card">
+        <div class="reason-icon">🌸</div>
+        <h3 class="reason-title">Just Being You</h3>
+        <p class="reason-text">Everything about you, exactly as you are, is what makes you incredible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secret Message Section -->
+  <section class="secret-section">
+    <div class="secret-container">
+      <div class="secret-box" id="secretBox" onclick="revealMessage()">
+        <div class="secret-locked" id="secretLocked">
+          <span class="lock-icon">🔒</span>
+          <p>Click to reveal a special message</p>
+        </div>
+        <div class="secret-revealed" id="secretRevealed">
+          <h3 class="secret-title">A Message From the Heart</h3>
+          <p class="secret-message">
+            I created this website because I wanted you to know how special you are. 
+            Your presence in my life makes everything better, and I'm grateful for every moment we share. 
+            You deserve to know just how amazing you truly are.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive "Do you love me?" question section -->
+  <section class="question-section">
+    <div class="question-container">
+      <h2 class="question-title">So... Hitanshi, I have a question for you</h2>
+      <p class="question-text">Do you love me?</p>
+      
+      <div class="buttons-container" id="buttonsContainer">
+        <button class="yes-button" id="yesButton" onclick="handleYes()">Yes! 💕</button>
+        <button class="no-button" id="noButton" onclick="handleNo()">No</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success overlay for when "Yes" is clicked -->
+  <div class="success-overlay" id="successOverlay">
+    <!-- Replaced paper plane with a car animation -->
+    <div class="car-container" id="carContainer">
+      <svg class="car-svg" id="car" width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Car body -->
+        <rect x="20" y="25" width="80" height="25" rx="5" fill="#ff6b9d"/>
+        <!-- Car top -->
+        <path d="M35 25 L40 10 L80 10 L85 25 Z" fill="#ff8fab"/>
+        <!-- Windows -->
+        <rect x="42" y="13" width="15" height="10" rx="2" fill="#ffffff" opacity="0.5"/>
+        <rect x="63" y="13" width="15" height="10" rx="2" fill="#ffffff" opacity="0.5"/>
+        <!-- Wheels -->
+        <circle cx="35" cy="50" r="8" fill="#1a365d"/>
+        <circle cx="85" cy="50" r="8" fill="#1a365d"/>
+        <circle cx="35" cy="50" r="4" fill="#718096"/>
+        <circle cx="85" cy="50" r="4" fill="#718096"/>
+        <!-- Headlights -->
+        <circle cx="102" cy="35" r="3" fill="#ffff00" opacity="0.8"/>
+        <circle cx="102" cy="42" r="3" fill="#ffff00" opacity="0.8"/>
+      </svg>
+    </div>
+    
+    <!-- Removed paper plane and trail canvas -->
+    <div class="explosion-particles" id="explosionParticles"></div>
+    
+    <div class="love-message" id="loveMessage">
+      <div class="message-content">
+        <h2 class="message-title">I love you too! 💕</h2>
+        <p class="message-text">You just made me the happiest person alive!</p>
+        <div class="hearts-burst">💗 💖 💝 💕 💘</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with love for Hitanshi 💕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
